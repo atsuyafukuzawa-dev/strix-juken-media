@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://atsuyafukuzawa-dev.github.io/strix-juken-media/sitemap.xml
