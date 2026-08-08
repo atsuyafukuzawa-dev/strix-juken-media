@@ -195,3 +195,23 @@ h1.article-title {
 }
 .back-link:hover { color: var(--navy); }
 .site-footer { text-align: center; color: var(--muted); font-size: 0.8rem; padding: 48px 0; border-top: 1px solid var(--border); }
+.article-body { overflow-wrap: break-word; word-break: break-word; }
+.article-body table { display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+img { max-width: 100%; height: auto; }
+@media (max-width: 640px) {
+  .site-header { padding: 14px 16px; gap: 10px; }
+  .site-title { font-size: 1.05rem; }
+  .site-nav-link { font-size: 0.78rem; padding: 6px 14px; white-space: nowrap; }
+  main { padding: 32px 16px 72px; }
+  .home-intro { padding: 36px 16px 4px; }
+  .home-intro h1 { font-size: 1.6rem; }
+  .home-intro p { font-size: 0.9rem; }
+  .home-grid { grid-template-columns: 1fr; gap: 28px; padding: 0 16px; margin: 32px auto 72px; }
+  h1.article-title { font-size: 1.5rem; }
+  .article-body { font-size: 0.98rem; }
+  .article-body h2 { font-size: 1.2rem; }
+  .article-body h3 { font-size: 1.05rem; }
+  .article-body table { font-size: 0.85rem; }
+  .cta-banner { padding: 20px 18px; }
+  .share-bar { gap: 8px; }
+}
