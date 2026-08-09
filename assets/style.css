@@ -166,9 +166,28 @@ h1.article-title {
   text-decoration: none;
   border: 1px solid var(--border);
   color: var(--navy);
+  background: none;
+  font-family: inherit;
+  cursor: pointer;
   transition: all 0.15s ease;
 }
 .share-btn:hover { background: var(--navy); color: #fff; border-color: var(--navy); }
+.related-articles { margin: 48px 0; }
+.related-title { font-family: 'Zen Old Mincho', serif; font-size: 1.15rem; color: var(--navy); margin: 0 0 18px; }
+.related-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 18px; }
+.related-card { text-decoration: none; color: inherit; display: block; }
+.related-thumb-wrap {
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #eee;
+  margin-bottom: 8px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.related-card:hover .related-thumb-wrap { transform: translateY(-2px); box-shadow: 0 8px 18px rgba(26,39,51,0.12); }
+.related-thumb { width: 100%; height: 100%; object-fit: cover; display: block; }
+.related-card-title { display: block; color: var(--navy); font-weight: 700; font-size: 0.88rem; line-height: 1.55; }
 /* STRIXの実際の事業資料(紺#0b2b55×ピンク#ec6b98、角の斜線装飾)に合わせた
    プロモーションCTAカード。トップページ・記事上部・記事末尾で共通利用する */
 .promo-cta {
